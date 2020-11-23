@@ -1,7 +1,7 @@
 import pygame
 
-import v2.mazecreator.settings as settings
-from v2.mazecreator.SquareState import SquareState
+import mazecreator.settings as settings
+from mazecreator.SquareState import SquareState
 
 
 class Square:

@@ -1,4 +1,4 @@
-import v2.mazecreator.rgbcolours as colours
+import mazecreator.rgbcolours as colours
 
 WIDTH = 1000
 ROWS = 50

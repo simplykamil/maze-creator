@@ -1,9 +1,8 @@
 import pygame
 
-import v2.mazecreator.rgbcolours as colours
-from v2.mazecreator.Square import Square
-
-import v2.mazecreator.settings as settings
+import mazecreator.rgbcolours as colours
+import mazecreator.settings as settings
+from mazecreator.Square import Square
 
 
 def make_grid(rows: int, width: int):
@@ -16,8 +15,6 @@ def make_grid(rows: int, width: int):
     """
 
     grid = list()
-    gap = width // rows
-
     for row in range(rows):
         grid.append(list())
         for col in range(rows):
@@ -44,3 +41,12 @@ def draw(win, grid, rows=settings.ROWS, width=settings.WIDTH):
 
     draw_grid(win, rows, width)
     pygame.display.update()
+
+
+def get_clicked_pos(pos):
+    y, x = pos
+
+    row = y // settings.GAP
+    col = x // settings.GAP
+
+    return row, col
