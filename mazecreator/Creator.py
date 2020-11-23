@@ -46,7 +46,8 @@ class Creator:
 
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_RETURN:
-                        return GRID
+                        if start_pos and end_pos:
+                            return GRID
 
         pygame.quit()
 

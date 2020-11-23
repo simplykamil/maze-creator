@@ -24,12 +24,10 @@ def make_grid(rows: int, width: int):
 
 
 def draw_grid(win, rows, width):
-    gap = width // rows
-
     for i in range(rows):
-        pygame.draw.line(win, settings.LINE_COLOUR, (0, i * gap), (width, i * gap))
+        pygame.draw.line(win, settings.LINE_COLOUR, (0, i * settings.GAP), (width, i * settings.GAP))
         for j in range(rows):
-            pygame.draw.line(win, settings.LINE_COLOUR, (j * gap, 0), (j * gap, width))
+            pygame.draw.line(win, settings.LINE_COLOUR, (j * settings.GAP, 0), (j * settings.GAP, width))
 
 
 def draw(win, grid, rows=settings.ROWS, width=settings.WIDTH):
