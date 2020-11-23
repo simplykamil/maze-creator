@@ -45,8 +45,6 @@ class Creator:
                         end_pos = None
 
                 elif event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_SPACE and not start_pos:
-                        print('Implement search you dumbo')
                     if event.key == pygame.K_RETURN:
                         return GRID
 
@@ -54,7 +52,7 @@ class Creator:
 
 
 if __name__ == '__main__':
-    GRID = Creator.get_grid()
+    GRID = Creator.gt()
 
     print()
     [print(x) for x in GRID]

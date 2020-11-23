@@ -74,6 +74,3 @@ class Square:
 
     def draw(self, win):
         pygame.draw.rect(win, self._get_colour_from_state(), (self.x, self.y, self.width, self.width))
-
-    def update_neighbours(self):
-        pass
