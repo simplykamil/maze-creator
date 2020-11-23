@@ -52,7 +52,7 @@ class Creator:
 
 
 if __name__ == '__main__':
-    GRID = Creator.gt()
+    GRID = Creator.get_grid()
 
     print()
     [print(x) for x in GRID]
